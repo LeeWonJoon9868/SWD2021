@@ -1,0 +1,9 @@
+create table comment(tid int,userid char(20),review char(20),score int,total int not null auto_increment primary key);
+
+
+create table item(tid int not null auto_increment primary key, cid int, cat char(20), title char(20), info char(100), price int, date date,sold char(20));
+
+
+CREATE TABLE image(tid int not null auto_increment PRIMARY KEY,image blob);   
+
+create table client(cid int not null auto_increment primary key, id char(20), password char(20), name char(20), phone char(20));
